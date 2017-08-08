@@ -1,4 +1,4 @@
-##Repo en github del codigo helloworld en django
+## Repo en github del codigo helloworld en django
 
 [Helloworld](https://github.com/django-ve/helloworld)
 
@@ -30,13 +30,18 @@ Django==1.9.4
 ## Docker Build
 ```
 
-docker build  -t pablo1n7/django-hello . 
+docker build  -t FTI/django-hello . 
 
 ```
 
 ## Docker Run 
 ```
 
-docker run -it -p 8000:8000 pablo1n7/django-hello
+docker run -it -p 8000:8000 FTI/django-hello
+
+```
+# Prueba
+```
+http://localhost:8000/
 
 ```
