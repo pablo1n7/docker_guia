@@ -1,5 +1,8 @@
-## init de Docker
+##Repo en github del codigo helloworld en django
 
+[Helloworld](https://github.com/django-ve/helloworld)
+
+## Formato de Dockerfile
 ```Dockerfile
 
 FROM python:3.4
@@ -17,5 +20,23 @@ RUN  python helloworld/manage.py migrate
 EXPOSE 8000
 CMD ["python", "helloworld/manage.py", "runserver", "0.0.0.0:8000"]
 
+
+```
+## requirements.txt
+```
+Django==1.9.4
+```
+
+## Docker Build
+```
+
+docker build  -t pablo1n7/django-hello . 
+
+```
+
+## Docker Run 
+```
+
+docker run -it -p 8000:8000 pablo1n7/django-hello
 
 ```
